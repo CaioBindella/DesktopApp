@@ -37,7 +37,7 @@ export default function Home(){
                     <h.ButtonOption>
                         <h.Text>Início</h.Text>
                     </h.ButtonOption>
-                    <h.ButtonOption>
+                    <h.ButtonOption onClick={() => navigate("/Client")}>
                         <h.Text>Cadastrar Cliente</h.Text>
                     </h.ButtonOption>
                     <h.ButtonOption>
