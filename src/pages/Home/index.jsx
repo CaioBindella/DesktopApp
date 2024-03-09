@@ -13,17 +13,23 @@ export default function Home(){
         labels: UserData.map((data) => data.year),
         datasets: [
           {
-            label: "Users Gained",
+            label: "Crescimento Anual",
             data: UserData.map((data) => data.userGain),
             backgroundColor: [
-              "rgba(75,192,192,1)",
-              "#ecf0f1",
-              "#50AF95",
-              "#f3ba2f",
-              "#2a71d0",
-            ],
-            borderColor: "black",
-            borderWidth: 2,
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(199, 29, 221, 0.2)',
+                'rgba(89, 6, 156, 0.2)',
+                'rgba(115, 28, 230, 0.2)',
+                'rgba(173, 17, 113, 0.2)',
+              ],
+              borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(207, 29, 192)',
+                'rgb(93, 13, 139)',
+                'rgb(197, 22, 212)',
+                'rgb(180, 25, 180)',
+              ],
+              borderWidth: 1,
           },
         ],
       });
@@ -32,43 +38,29 @@ export default function Home(){
     return(
         <h.Container>
             <Header/>
-            <h.RowContent>
+            <h.ColumnContent>
                 <h.MenuBar>
-                    <h.ButtonOption>
-                        <h.Text>Início</h.Text>
-                    </h.ButtonOption>
                     <h.ButtonOption onClick={() => navigate("/Client")}>
-                        <h.Text>Cadastrar Cliente</h.Text>
+                        <h.Text>Clientes</h.Text>
                     </h.ButtonOption>
                     <h.ButtonOption>
-                        <h.Text>Gerar Dashboard</h.Text>
+                        <h.Text>Funcionários</h.Text>
                     </h.ButtonOption>
                     <h.ButtonOption>
-                        <h.Text>Caixa da Empresa</h.Text>
+                        <h.Text>Dashboards</h.Text>
                     </h.ButtonOption>
                     <h.ButtonOption>
-                        <h.Text>Gerir Membros</h.Text>
-                    </h.ButtonOption>
-                    <h.ButtonOption>
-                        <h.Text>?</h.Text>
-                    </h.ButtonOption>
-                    <h.ButtonOption>
-                        <h.Text>?</h.Text>
-                    </h.ButtonOption>
-                    <h.ButtonOption>
-                        <h.Text>?</h.Text>
-                    </h.ButtonOption>
-                    <h.ButtonOption>
-                        <h.Text>?</h.Text>
+                        <h.Text>Finanças</h.Text>
                     </h.ButtonOption>
                     <h.ButtonOption onClick={() => navigate("/")}>
                         <h.Text>Sair</h.Text>
-                    </h.ButtonOption>
+                    </h.ButtonOption> 
                 </h.MenuBar>
                 <h.Content>
-                    <BarChart chartData={userData} />
+                    <BarChart 
+                    chartData={userData} />
                 </h.Content> 
-            </h.RowContent>
+            </h.ColumnContent>
         </h.Container>
     );
 }

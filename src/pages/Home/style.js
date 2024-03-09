@@ -9,10 +9,13 @@ export const Container = styled.div`
 `;
 
 export const ButtonOption = styled.button`
-    margin-top: 5%;
     border: 0px;
     border-bottom: 1px solid #7F48F3;
     background-color: #fff;
+    width: 250px;
+    border-radius: 0px 0px 8px 8px;
+    border: 1px solid #7F48F3;
+    border-top: 0px;
 
     &:hover{
         background-color: lightgrey;
@@ -22,10 +25,9 @@ export const ButtonOption = styled.button`
 `;
 
 export const MenuBar = styled.div`
-    width: 25%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    border-right: 1px solid #7F48F3;
+    flex-direction: row;
 `;
 
 
@@ -44,7 +46,9 @@ export const Text = styled.p`
     
 `;
 
-export const RowContent = styled.div`
+export const ColumnContent = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;
