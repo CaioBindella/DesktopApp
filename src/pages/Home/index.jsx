@@ -37,7 +37,7 @@ export default function Home(){
 
     return(
         <h.Container>
-            <Header/>
+            <Header Title="GERENC.IA"/>
             <h.ColumnContent>
                 <h.MenuBar>
                     <h.ButtonOption onClick={() => navigate("/Client")}>

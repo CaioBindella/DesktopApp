@@ -1,26 +1,54 @@
-import React from "react";
-import * as C from "./style"
+import React, { useState } from "react";
+import * as C from "./style";
 import FormPF from "../FormPF";
 import FormPJ from "../FormPJ";
+import Header from "../Header";
+import { useNavigate } from "react-router-dom";
 
-export default function ClientRegister(){
-    return(
-        <C.Container>
-            <C.Title>Cadastro de Cliente</C.Title>
+export default function ClientRegister() {
 
+    const navigate = useNavigate();
+    const [clientType, setClientType] = useState("pf"); // Estado para armazenar o tipo de cliente selecionado
+
+    const handleClientTypeChange = (event) => {
+        setClientType(event.target.value); // Atualiza o estado com o tipo de cliente selecionado
+    };
+
+  
+
+  return (
+    <C.Container>
+        <Header Title="Cadastro de Cliente"/>
+        <C.DivRow>
             <C.DivInputs>
-                <C.InputData type="radio"></C.InputData>
-                <C.Text>Pessoa Física</C.Text>
+            <input
+                type="radio"
+                name="clientType"
+                value="pf"
+                checked={clientType === "pf"}
+                onChange={handleClientTypeChange}
+            />
+            <C.Text>Pessoa Física</C.Text>
             </C.DivInputs>
 
             <C.DivInputs>
-                <C.InputData type="radio"></C.InputData>
-                <C.Text>Pessoa Jurídica</C.Text>
+            <input
+                type="radio"
+                name="clientType"
+                value="pj"
+                checked={clientType === "pj"}
+                onChange={handleClientTypeChange}
+            />
+            <C.Text>Pessoa Jurídica</C.Text>
             </C.DivInputs>
+        </C.DivRow>
 
-            {/* <FormPF/> */}
-            {/* <FormPJ/> */}
+        {clientType === "pf" ? <FormPF /> : <FormPJ />} {/* Renderiza o formulário de acordo com o tipo de cliente selecionado */}
 
-        </C.Container>
-    );
+        <C.DivButtonCentred>
+            <C.Button onClick={() => navigate("/homePage")}>Voltar</C.Button>
+        </C.DivButtonCentred>
+        
+    </C.Container>
+  );
 }

@@ -46,7 +46,7 @@ export const DivRow = styled.div`
 `;
 
 export const ButtonRegister = styled.button`
-    background-color: #7F48F3;
+    background-color: #3b71ca;
     border: none;
     border-radius: 6px;
     width: 300px;

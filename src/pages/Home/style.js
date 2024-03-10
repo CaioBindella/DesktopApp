@@ -10,11 +10,11 @@ export const Container = styled.div`
 
 export const ButtonOption = styled.button`
     border: 0px;
-    border-bottom: 1px solid #7F48F3;
+    border-bottom: 1px solid #3b71ca;
     background-color: #fff;
     width: 250px;
     border-radius: 0px 0px 8px 8px;
-    border: 1px solid #7F48F3;
+    border: 1px solid #3b71ca;
     border-top: 0px;
 
     &:hover{
@@ -40,7 +40,7 @@ export const Content = styled.div`
 `;
 
 export const Text = styled.p`
-    color: #7F48F3;
+    color: #3b71ca;
     font-weight: 600;
 
     

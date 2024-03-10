@@ -33,5 +33,26 @@ export const DivInputs = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: 150px;
+`;
+
+export const DivRow = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+
+export const Button = styled.button`
+    background-color: #7F48F3;
+    color: #fff;
+    width: 250px;
+    border: 1px solid #fff;
+    margin-top: 7%;
+    padding: 1%;
+    border-radius: 7px;
+`;
+
+export const DivButtonCentred = styled.div`
+    width: 90%;
+    display: flex;
+    justify-content: start;
 `;

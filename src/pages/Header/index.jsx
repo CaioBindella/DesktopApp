@@ -1,10 +1,10 @@
 import React from "react";
 import * as h from "./style";
 
-export default function Header(){
+export default function Header(props){
     return(
         <h.Container>
-            <h.Title>GERENC.IA</h.Title>
+            <h.Title>{props.Title}</h.Title>
         </h.Container>
     )
 }
