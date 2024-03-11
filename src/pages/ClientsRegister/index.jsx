@@ -18,8 +18,8 @@ export default function ClientRegister() {
 
   return (
     <C.Container>
-        <Header Title="Cadastro de Cliente"/>
-        <C.DivRow>
+        <Header/>
+        {/* <C.DivRow>
             <C.DivInputs>
             <input
                 type="radio"
@@ -43,11 +43,8 @@ export default function ClientRegister() {
             </C.DivInputs>
         </C.DivRow>
 
-        {clientType === "pf" ? <FormPF /> : <FormPJ />} {/* Renderiza o formulário de acordo com o tipo de cliente selecionado */}
+        {clientType === "pf" ? <FormPF /> : <FormPJ />}  */}
 
-        <C.DivButtonCentred>
-            <C.Button onClick={() => navigate("/homePage")}>Voltar</C.Button>
-        </C.DivButtonCentred>
         
     </C.Container>
   );
