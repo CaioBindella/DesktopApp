@@ -11,11 +11,23 @@ export const Container = styled.div`
 export const DivRow = styled.div`
     display: flex;
     flex-direction: row;
-    width: 390px;
+    width: 100%;
+    background-color: red;
     justify-content: space-around;
     align-items: center;
-    height: 450px;
+    height: 12vh;
     padding: 3%;
+`;
+
+export const DivBottom = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    /* padding: 3%; */
     margin-bottom: 3%;
 `;
 

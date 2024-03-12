@@ -8,7 +8,7 @@ export default function Header(props){
     const navigate = useNavigate();
     return(
         <div className="headerR">
-            <nav class="navbar navbar-expand-lg navbar-light bg-primary w-auto p-3 ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary w-auto p-3 ml-120px">
                 <a class="navbar-brand" href="#">GERENC.IA</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,6 +36,9 @@ export default function Header(props){
                     </ul>
                 </div>
             </nav>
+            <div className="test">
+                <p>a</p>
+            </div>
         </div>
     )
 }

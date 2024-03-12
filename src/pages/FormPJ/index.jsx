@@ -33,6 +33,7 @@ export default function FormPJ(){
 
     return(
         <C.Container>
+            <C.Title>Cadastro de PJ</C.Title>
             <C.DivRow>
                 <C.InputsLeft>
                     <C.Inputs>

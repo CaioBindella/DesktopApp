@@ -55,7 +55,7 @@ export default function Employees(){
 
             <button type="button" class="btn btn-primary btn-lg" onClick={() => navigate("/Client")}>Cadastrar novo Funcionário</button>
             
-            <div className="lista">
+            <div className="Content-card">
                 <RenderLista search={search} data={ClientsData}/>
             </div>
             

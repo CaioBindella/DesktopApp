@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    width: 60%;
+    width: 70%;
     /* border: 3px solid rgba(1089, 6, 156, 0.2); */
     border-radius: 7px;
     padding: 40px;
@@ -32,7 +32,7 @@ export const InputData = styled.input`
     width: 250px;
     border-radius: 7px;
     padding: 8px;
-    /* border: 1px solid #7F48F3; */
+    border: 0px;
 `;
 
 export const Text = styled.p`

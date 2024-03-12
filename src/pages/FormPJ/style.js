@@ -32,7 +32,7 @@ export const InputData = styled.input`
     width: 250px;
     border-radius: 7px;
     padding: 8px;
-    /* border: 1px solid #7F48F3; */
+    border: 0px;
 `;
 
 export const Text = styled.p`

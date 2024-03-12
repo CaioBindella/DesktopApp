@@ -27,6 +27,7 @@ export default function FormPF(){
 
     return(
         <C.Container>
+            <C.Title>Cadastro de PF</C.Title>
             <C.DivRow>
                 <C.InputsLeft>
                     <C.Inputs>
@@ -97,7 +98,7 @@ export default function FormPF(){
                 </C.InputsRight>
             </C.DivRow>
             
-            <button type="button" class="btn btn-primary btn-lg" onClick={() => navigate("/Client")}>Cadastrar</button>
+            <button type="button" class="btn btn-primary btn-lg" onClick={() => navigate("/Client")}>Cadastrar novo Cliente</button>
 
             <Footer></Footer>
         </C.Container>

@@ -1,12 +1,17 @@
 .lista{
-    width: 100vw;
-  max-width: 1200px;
-  background-color: red;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  
 }
 
 .card{
     margin: 3%;
+}
+
+.Content-card{
+  width: 100%;
+  /* max-width: 1200px; */
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin-bottom: 6%;
 }

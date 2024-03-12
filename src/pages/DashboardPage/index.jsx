@@ -10,7 +10,7 @@ import Header from "../Header/index.jsx";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Footer/index.jsx";
 
-export default function Dashboards(){
+export default function Dashboards( ){
 
     const navigate = useNavigate();
 
@@ -43,17 +43,42 @@ export default function Dashboards(){
         <D.Container>
             <Header/>
             <D.DivRow>
-                <LineChart chartData={userData}/>
-                <PieChart chartData={userData}/>
-                <RadarChart chartData={userData}/>
-                <BarChart chartData={userData}/>
+                <div class="row">
+                <div class="col-sm">
+                  <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                  {/* <div class="card-header">Header</div> */}
+                  {/* <div class="card-body text-secondary">
+                    <h5 class="card-title">Secondary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div> */}
+                </div>
+                </div>
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                </div>
+              </div>
             </D.DivRow>
+            
 
-            {/* <D.DivRow>
-                <RadarChart chartData={userData}/>
-                <BarChart chartData={userData}/>
-            </D.DivRow> */}
+            <D.DivBottom>
+              <div class="row">
+                  <div class="col-sm">
+                    <BarChart chartData={userData}/>
+                  </div>
+                  <div class="col-sm">
+                    <RadarChart chartData={userData}/>
+                  </div>
+                </div>
+            </D.DivBottom>
             <Footer/>
         </D.Container>
     );
 }
+
+
+
+{/* <LineChart chartData={userData}/>
+<PieChart chartData={userData}/>
+
+  */}
