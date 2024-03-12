@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import * as C from "./style"
+import Footer from "../Footer";
 
 export default function FormPJ(){
 
@@ -140,9 +141,9 @@ export default function FormPJ(){
                 </C.InputsRight>
             </C.DivRow>
             
-            <C.ButtonRegister>
-                <C.Text>Cadastrar</C.Text>
-            </C.ButtonRegister>
+            <button type="button" class="btn btn-primary btn-lg" onClick={() => navigate("/Client")}>Cadastrar novo Cliente</button>
+
+            <Footer></Footer>
         </C.Container>
 
     );

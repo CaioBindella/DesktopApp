@@ -2,7 +2,7 @@ export const FinancesData = [
     {
         id: 1,
         month: 1,
-        userGain: 80000,
+        userGain: 100,
         userLost: 823,
       },
       {

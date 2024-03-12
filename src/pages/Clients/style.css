@@ -1,6 +1,10 @@
 .lista{
-    width: 500px;
-    margin: 2%;
+    width: 100vw;
+  max-width: 1200px;
+  background-color: red;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card{

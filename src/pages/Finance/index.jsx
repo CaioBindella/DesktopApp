@@ -4,20 +4,18 @@ import Footer from "../Footer";
 import "./style.css"
 import { useState } from "react";
 import BarChart from "../../Charts/BarChart";
-import { UserData } from "../../Data/Finan.js";
-
-
+import  {FinancesData}  from "../../Data/Finan.js";
 
 export default function Finance(){
 
     const [formType, setFormType] = useState(null);
 
     const [userData, setUserData] = useState({
-        labels: UserData.map((data) => data.month),
+        labels: FinancesData.map((data) => data.month),
         datasets: [
           {
-            label: "Crescimento Anual",
-            data: UserData.map((data) => data.userGain),
+            label: "Crescimento Mensal",
+            data: FinancesData.map((data) => data.userGain),
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(199, 29, 221, 0.2)',
@@ -93,7 +91,9 @@ export default function Finance(){
                 {renderForm()}
             </div>
 
-            <BarChart chartData={userData}/>
+            <div className="Divchart">
+                <BarChart chartData={userData}/>
+            </div>
 
             <Footer/>
         </div>

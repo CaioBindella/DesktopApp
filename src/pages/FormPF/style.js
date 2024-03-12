@@ -2,14 +2,14 @@ import styled from "styled-components"
 
 export const Container = styled.div`
     width: 60%;
-    border: 3px solid rgba(89, 6, 156, 0.2);
+    /* border: 3px solid rgba(1089, 6, 156, 0.2); */
     border-radius: 7px;
     padding: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(89, 6, 156, 0.2);
+    background-color: lightgrey;
 `;
 
 export const Title = styled.h1`
@@ -32,7 +32,7 @@ export const InputData = styled.input`
     width: 250px;
     border-radius: 7px;
     padding: 8px;
-    border: 1px solid #7F48F3;
+    /* border: 1px solid #7F48F3; */
 `;
 
 export const Text = styled.p`
@@ -43,6 +43,8 @@ export const DivRow = styled.div`
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 40px;
 `;
 
 export const ButtonRegister = styled.button`
@@ -55,5 +57,5 @@ export const ButtonRegister = styled.button`
 `;
 
 export const Line = styled.div`
-    border: 1px solid #7F48F3;
+    border: 1px solid grey;
 `;
