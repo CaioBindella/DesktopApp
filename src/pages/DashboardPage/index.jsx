@@ -8,6 +8,7 @@ import { useState } from "react";
 import { UserData } from "../../Data/Data.js";
 import Header from "../Header/index.jsx";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Footer/index.jsx";
 
 export default function Dashboards(){
 
@@ -40,16 +41,19 @@ export default function Dashboards(){
 
     return(
         <D.Container>
-            <Header Title="Dashboards"/>
+            <Header/>
             <D.DivRow>
                 <LineChart chartData={userData}/>
                 <PieChart chartData={userData}/>
-            </D.DivRow>
-
-            <D.DivRow>
                 <RadarChart chartData={userData}/>
                 <BarChart chartData={userData}/>
             </D.DivRow>
+
+            {/* <D.DivRow>
+                <RadarChart chartData={userData}/>
+                <BarChart chartData={userData}/>
+            </D.DivRow> */}
+            <Footer/>
         </D.Container>
     );
 }

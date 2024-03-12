@@ -19,7 +19,7 @@ export default function ClientRegister() {
   return (
     <C.Container>
         <Header/>
-        {/* <C.DivRow>
+        <C.DivRow>
             <C.DivInputs>
             <input
                 type="radio"
@@ -43,7 +43,7 @@ export default function ClientRegister() {
             </C.DivInputs>
         </C.DivRow>
 
-        {clientType === "pf" ? <FormPF /> : <FormPJ />}  */}
+        {clientType === "pf" ? <FormPF /> : <FormPJ />} 
 
         
     </C.Container>

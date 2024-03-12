@@ -56,10 +56,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 800,
+        "height": 768,
         "resizable": true,
-        "title": "tauri-app-test",
-        "width": 1200
+        "title": "GERENC.IA",
+        "width": 1366
       }
     ]
   }

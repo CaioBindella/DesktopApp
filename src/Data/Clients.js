@@ -2,41 +2,49 @@ export const ClientsData = [
     {
         id: 1,
         name: "Mark",
-        last: "Otto"
+        last: "Otto",
+        type: "PF"
     },
     {
         id: 2,
         name: "Jacob",
-        last: "Thornton"
+        last: "Thornton",
+        type: "PJ"
     },
     {
         id: 3,
         name: "Larry",
-        last: "The bird"
+        last: "The bird",
+        type: "PF"
     },
     {
         id: 4,
         name: "Garry",
-        last: "Guliver"
+        last: "Guliver",
+        type: "PJ"
     },
     {
         id: 3,
         name: "Larry",
-        last: "The bird"
+        last: "The bird",
+        type: "PF"
     },
     {
         id: 4,
         name: "Garry",
-        last: "Guliver"
+        last: "Guliver",
+        type: "PJ"
     },
     {
         id: 3,
         name: "Larry",
-        last: "The bird"
+        last: "The bird",
+        type: "PF"
     },
     {
         id: 4,
         name: "Garry",
-        last: "Guliver"
+        last: "Guliver",
+        type: "PF"
     },
   ];

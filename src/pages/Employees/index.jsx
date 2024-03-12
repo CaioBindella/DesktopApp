@@ -3,12 +3,10 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { useState } from "react";
 import { ClientsData } from "../../Data/Clients";
-import "./style.css"
+import "./style.css";
 import { useNavigate } from "react-router-dom";
 
-
 export const RenderLista = ({data, search}) => {
-
 
     const searchLowerCase = search.toLowerCase()
     const names = ClientsData.filter((eachData) => eachData.name.toLowerCase().includes(searchLowerCase));
@@ -36,7 +34,7 @@ export const RenderLista = ({data, search}) => {
     )
 }
 
-export default function Clients(){
+export default function Employees(){
 
     const [search, setSearch] = useState("");
     const navigate = useNavigate();
@@ -55,7 +53,7 @@ export default function Clients(){
                 onChange={(e) => setSearch(e.target.value)}/>
             </div>
 
-            <button type="button" class="btn btn-primary btn-lg" onClick={() => navigate("/Client")}>Cadastrar novo Cliente</button>
+            <button type="button" class="btn btn-primary btn-lg" onClick={() => navigate("/Client")}>Cadastrar novo Funcionário</button>
             
             <div className="lista">
                 <RenderLista search={search} data={ClientsData}/>

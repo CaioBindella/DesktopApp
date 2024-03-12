@@ -7,7 +7,7 @@ export default function Footer(){
             <footer className="bg-primary text-center text-lg-start" >
                 <div class="text-center p-3" >
                     © 2024 Copyright:
-                    <a class="text-body" href="https://mdbootstrap.com/">GERENC.IA</a>
+                    <a class="text-body"> GERENC.IA</a>
                 </div>  
             </footer>
         </div>

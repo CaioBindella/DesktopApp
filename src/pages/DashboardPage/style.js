@@ -11,10 +11,12 @@ export const Container = styled.div`
 export const DivRow = styled.div`
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 390px;
     justify-content: space-around;
     align-items: center;
-    height: 350px;
+    height: 450px;
+    padding: 3%;
+    margin-bottom: 3%;
 `;
 
 export const Button = styled.button`
