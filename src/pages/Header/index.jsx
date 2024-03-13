@@ -28,6 +28,9 @@ export default function Header(props){
                             <a class="nav-link" role="button" onClick={() => navigate("/Dashboard")}>Dashboards</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" role="button" onClick={() => navigate("/")}>RH</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" role="button" onClick={() => navigate("/Finance")}>Finanças</a>
                         </li>
                         <li class="nav-item">

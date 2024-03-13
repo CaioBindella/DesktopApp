@@ -12,18 +12,16 @@ export const DivRow = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: red;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 12vh;
-    padding: 3%;
+    /* height: 12vh; */
 `;
 
 export const DivBottom = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: space-around;
     align-items: center;
     height: 60vh;
