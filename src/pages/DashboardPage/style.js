@@ -6,6 +6,22 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    /* From https://css.glass */
+    
+`;
+
+export const ContentDashboard = styled.div`
+    width: 100%;
+    padding: 10px;
+    /* From https://css.glass */
+/* From https://css.glass */
+    background: rgba(84, 32, 141, 0.81);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.9px);
+    -webkit-backdrop-filter: blur(2.9px);
+    border: 1px solid rgba(84, 32, 141, 0.52);
 `;
 
 export const DivRow = styled.div`
@@ -24,7 +40,7 @@ export const DivBottom = styled.div`
     /* border: 1px solid black; */
     justify-content: space-around;
     align-items: center;
-    height: 60vh;
+    height: 50vh;
     /* padding: 3%; */
     margin-bottom: 3%;
 `;

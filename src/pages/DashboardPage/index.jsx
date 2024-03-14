@@ -43,34 +43,37 @@ export default function Dashboards( props){
     return(
         <D.Container>
             <Header/>
-            <D.DivRow>
+            <D.ContentDashboard>
+                <D.DivRow>
+                    
+                    <div class="col-sm">
+                      <CardDashboard Title="Receitas" number="R$2132,13" Description="Last seen 14hours"/>
+                    </div>
+                    <div class="col-sm">
+                      <CardDashboard Title="Despesas" number="R$2132,13" Description="Last seen 14hours"/>
+                    </div> 
+                    <div class="col-sm">
+                      <CardDashboard Title="Caixa" number="R$2132,13" Description="Last seen 14hours"/>
+                    </div> 
+                    <div class="col-sm">
+                      <CardDashboard Title="Contas" number="R$2132,13" Description="Last seen 14hours"/>
+                    </div> 
                 
-                  <div class="col-sm">
-                    <CardDashboard Title="Receitas" number="R$2132,13" Description="Last seen 14hours"/>
-                  </div>
-                  <div class="col-sm">
-                    <CardDashboard Title="Despesas" number="R$2132,13" Description="Last seen 14hours"/>
-                  </div> 
-                  <div class="col-sm">
-                    <CardDashboard Title="Caixa" number="R$2132,13" Description="Last seen 14hours"/>
-                  </div> 
-                  <div class="col-sm">
-                    <CardDashboard Title="Contas" number="R$2132,13" Description="Last seen 14hours"/>
-                  </div> 
+              </D.DivRow>
               
-            </D.DivRow>
-            
 
-            <D.DivBottom>
-              <div class="row">
-                  <div class="col-sm">
-                    <BarChart chartData={userData}/>
-                  </div>
-                  <div class="col-sm">
-                    <RadarChart chartData={userData}/>
-                  </div>
+              <D.DivBottom>
+                <div class="row">
+                    <div class="col-sm">
+                      <BarChart chartData={userData}/>
+                    </div>
+                    <div class="col-sm">
+                      <RadarChart chartData={userData}/>
+                    </div>
                 </div>
-            </D.DivBottom>
+              </D.DivBottom>
+            </D.ContentDashboard>
+            
             <Footer/>
         </D.Container>
     );

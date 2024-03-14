@@ -7,6 +7,7 @@ import { UserData } from "../../Data/Data.js";
 import Footer from "../Footer/index.jsx";
 import Numbers from "../../assets/numbers.webp"
 import "./style.css"
+import TodoList from "../../Components/ListTask/index.jsx";
 
 export default function Home(){
 
@@ -42,65 +43,9 @@ export default function Home(){
         <div className="Cont">
             <Header/>
                 <h.Content>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card h-100 ">
-                            <img src={Numbers} class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                            <img src={Numbers} class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                            <img src={Numbers} class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
+                        <TodoList/>
                     </h.Content> 
             <Footer/>
         </div>
     );
 }
-
-
-{/* <h.MenuBar>
-                    <h.ButtonOption onClick={() => navigate("/Client")}>
-                        <h.Text>Clientes</h.Text>
-                    </h.ButtonOption>
-                    <h.ButtonOption>
-                        <h.Text>Funcionários</h.Text>
-                    </h.ButtonOption>
-                    <h.ButtonOption onClick={() => navigate("/Dashboard")}>
-                        <h.Text>Dashboards</h.Text>
-                    </h.ButtonOption>
-                    <h.ButtonOption>
-                        <h.Text>Finanças</h.Text>
-                    </h.ButtonOption>
-                    <h.ButtonOption onClick={() => navigate("/")}>
-                        <h.Text>Sair</h.Text>
-                    </h.ButtonOption> 
-                </h.MenuBar> */}
