@@ -22,7 +22,7 @@ export default function Dashboards( props){
             label: "Crescimento Anual",
             data: UserData.map((data) => data.userGain),
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
+                'rgba(115, 255, 0, 0.2)',
                 'rgba(199, 29, 221, 0.2)',
                 'rgba(89, 6, 156, 0.2)',
                 'rgba(115, 28, 230, 0.2)',

@@ -1,12 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import * as T from "./style.js"
 import TrashIcon from "../../assets/TrashIcon.svg"
 import "./style.css"
 
 function TodoList() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(() => {
+    const storedTasks = localStorage.getItem('tasks');
+    return storedTasks ? JSON.parse(storedTasks) : [];
+  });
   const [inputValue, setInputValue] = useState('');
-  const [checkedStates, setCheckedStates] = useState([]);
+  const [checkedStates, setCheckedStates] = useState(() => {
+    const storedCheckedStates = localStorage.getItem('checkedStates');
+    return storedCheckedStates ? JSON.parse(storedCheckedStates) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
+
+  useEffect(() => {
+    localStorage.setItem('checkedStates', JSON.stringify(checkedStates));
+  }, [checkedStates]);
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);

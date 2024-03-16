@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const LeftContent = styled.div`
-    background-color: #3b71ca;
+    background-color: #01062C;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -39,11 +39,11 @@ export const Input = styled.input`
     margin: 10px;
     width: 300px;
     border: 0;
-    border-bottom: 1px solid #3b71ca;
+    border-bottom: 1px solid #01062C;
 `;
 
 export const ButtonLogin = styled.button`
-    background-color: #3b71ca;
+    background-color: #01062C;
     border: none;
     border-radius: 6px;
     width: 300px;

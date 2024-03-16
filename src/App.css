@@ -11,3 +11,6 @@ body {
   overflow-x: hidden;
 }
 
+.primary{
+  background-color: #01062C !important;
+}
