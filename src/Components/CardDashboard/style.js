@@ -7,7 +7,7 @@ export const Container = styled.div`
     margin: 0px;
 
     /* From https://css.glass */
-    background: rgba(122, 0, 255, 0.53);
+    background: #01062C;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);

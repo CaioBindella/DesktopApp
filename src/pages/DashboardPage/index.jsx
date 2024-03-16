@@ -10,6 +10,7 @@ import Header from "../Header/index.jsx";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Footer/index.jsx";
 import CardDashboard from "../../Components/CardDashboard/index.jsx";
+import "./style.css"
 
 export default function Dashboards( props){
 
@@ -63,14 +64,13 @@ export default function Dashboards( props){
               
 
               <D.DivBottom>
-                <div class="row">
-                    <div class="col-sm">
+                    <div class="chartcontent">
                       <BarChart chartData={userData}/>
                     </div>
-                    <div class="col-sm">
+                    <D.Line></D.Line>
+                    <div class="chartcontent">
                       <RadarChart chartData={userData}/>
                     </div>
-                </div>
               </D.DivBottom>
             </D.ContentDashboard>
             

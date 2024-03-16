@@ -91,9 +91,9 @@ export default function Finance(){
                 {renderForm()}
             </div>
 
-            <div className="Divchart">
+            {/* <div className="Divchart">
                 <BarChart chartData={userData}/>
-            </div>
+            </div> */}
 
             <Footer/>
         </div>

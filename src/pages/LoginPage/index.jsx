@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import * as l from "./style.js";
-import IMGHome from "../../assets/homeImage.svg";
+import Logo from "../../assets/logo.jpeg";
 import { useNavigate } from "react-router-dom"
 
 export default function LoginPage() {
@@ -18,7 +18,7 @@ export default function LoginPage() {
     <l.Container>
       <l.LeftContent>
         <l.Title>GERENC.IA</l.Title>
-        <img src={IMGHome} alt="Imagem da Home" />
+        <img src={Logo} alt="Imagem da Home" className="logowidth" />
         <l.Description>
           Completo e intuitivo, projetado para otimizar a gestão de todas as
           áreas de uma empresa. Desde o controle financeiro e de estoque até o
