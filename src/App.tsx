@@ -7,6 +7,7 @@ import Dashboard from "./pages/DashboardPage";
 import Clients  from "./pages/Clients"
 import Finance from "./pages/Finance"
 import Employees from "./pages/Employees"
+import PageEmp from "./pages/EmployeesPage"
 
 
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Clients" element={<Clients/>}/>
           <Route path="/Finance" element={<Finance/>}/>
           <Route path="/Employees" element={<Employees/>}/>
+          <Route path="/EmployeesPage" element={<PageEmp/>}/>
         </Routes>
       </Router>
     </div>

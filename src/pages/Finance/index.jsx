@@ -8,7 +8,7 @@ import  {FinancesData}  from "../../Data/Finan.js";
 
 export default function Finance(){
 
-    const [formType, setFormType] = useState(null);
+    const [formType, setFormType] = useState('button1');
 
     const [userData, setUserData] = useState({
         labels: FinancesData.map((data) => data.month),
